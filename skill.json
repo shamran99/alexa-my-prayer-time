@@ -1,0 +1,104 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:669414533702:function:0e7c4533-96a0-4276-94b7-aaaa2ab607ba:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:669414533702:function:0e7c4533-96a0-4276-94b7-aaaa2ab607ba:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:669414533702:function:0e7c4533-96a0-4276-94b7-aaaa2ab607ba:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:669414533702:function:0e7c4533-96a0-4276-94b7-aaaa2ab607ba:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa::alerts:reminders:skill:readwrite"
+      }
+    ],
+    "publishingInformation": {
+      "automaticClonedLocale": {
+        "locales": [
+          {
+            "source": "en-GB"
+          }
+        ]
+      },
+      "distributionCountries": [],
+      "isAvailableWorldwide": true,
+      "locales": {
+        "en-CA": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [],
+          "name": "Black pool",
+          "summary": "Sample Short Description"
+        },
+        "en-US": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [],
+          "name": "Black pool",
+          "summary": "Sample Short Description"
+        },
+        "en-IN": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [],
+          "name": "Black pool",
+          "summary": "Sample Short Description"
+        },
+        "en-AU": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [],
+          "name": "Black pool",
+          "summary": "Sample Short Description"
+        },
+        "en-GB": {
+          "description": "Sample Full Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "keywords": [],
+          "name": "Black pool",
+          "summary": "Sample Short Description"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}

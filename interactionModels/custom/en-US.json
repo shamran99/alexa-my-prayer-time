@@ -1,0 +1,97 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "cycle time",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "PrayerTimeIntent",
+          "slots": [
+            {
+              "name": "prayer",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples": [
+            "what is {prayer} time",
+            "{prayer} please",
+            "{prayer}",
+            "when is {prayer}"
+          ]
+        },
+        {
+          "name": "AllPrayerTimeIntent",
+          "slots": [],
+          "samples": [
+            "prayer times please",
+            "all prayer times",
+            "read all prayer times",
+            "tell all prayer times",
+            "tell me all prayer times"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "PrayerTimeIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "prayer",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1267593433964.341816995283"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1267593433964.341816995283",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Please tell me Which prayer time you want to hear?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Sorry, I do not understand that. Please tell me Which prayer time you want to hear?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "9"
+}
