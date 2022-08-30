@@ -23,7 +23,7 @@
   const sessionAttributes = handlerInput.attributesManager.getSessionAttributes(); //localTest comment
    
    
-   var url = 'https://sheets.googleapis.com/v4/spreadsheets/1do3RlJJynQNBWdJUWPnsokBSip4r3n0YeSGaKzHMo70/values/Sheet1?key=AIzaSyAWKoMx8MOgR_DGU1yCt_vtjEysSbQk8RU';
+   var url = '';
  
    https.get(url, function(res){
        var body = '';
